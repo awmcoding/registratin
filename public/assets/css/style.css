@@ -1,0 +1,440 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: middle; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  background: #f4f4f4; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clear {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clear {
+  height: 1%; }
+
+.clear {
+  display: block; }
+
+/* close commented backslash hack */
+/****************************************
+BASIC ELEMENTS
+*****************************************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+hr {
+  clear: both;
+  border: none;
+  outline: none; }
+
+em {
+  font-style: italic; }
+
+a {
+  text-decoration: underline; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+ul, ol {
+  font-size: 14px;
+  padding: 0 0 0 33px; }
+  ul li, ol li {
+    margin: 0; }
+
+blockquote {
+  padding: 0 15px 0 40px; }
+
+table {
+  margin: 20px 0;
+  width: 100%;
+  font-size: 13px;
+  background: white; }
+  table th {
+    font-weight: bold;
+    font-size: 16px; }
+  table tr td {
+    padding: 7px; }
+
+::selection {
+  background: #000;
+  color: white; }
+
+::-moz-selection {
+  background: #000;
+  color: white; }
+
+h1 {
+  color: black;
+  font-size: 3em;
+  margin: 0; }
+
+h2 {
+  font-size: 2em;
+  color: black;
+  margin: 0; }
+
+h3 {
+  font-size: 16px;
+  margin: 0.67em 0; }
+
+h4 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+p {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 22px;
+  margin: 0.8em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/*********************
+VARIABLES
+**********************/
+/*Controls Menu top & bottom padding*/
+/*Contols Menu left & right padding*/
+/*Control Menu Color Scheme*/
+/*********************
+RESPONSIVE BREAKPOINTS
+**********************/
+/*********************
+NAVIGATION STYLES
+**********************/
+nav {
+  width: 100%;
+  background: linear-gradient(to bottom, #353535 0%, #232323 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35); }
+  @media (max-width: 715px) {
+    nav {
+      margin: 65px 0 0 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      background: #191919; } }
+
+nav ul {
+  margin: 0 auto;
+  width: 1100px;
+  list-style: none; }
+  @media (max-width: 715px) {
+    nav ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+      z-index: 15; } }
+  nav ul li {
+    float: left;
+    position: relative;
+    z-index: 1;
+    /******************
+    SUBNAV
+    ******************/ }
+    @media (max-width: 715px) {
+      nav ul li {
+        float: none;
+        position: relative;
+        margin: 0; } }
+    nav ul li a {
+      display: block;
+      padding: 20px 25px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      border-right: 1px solid #1c1c1c;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+      transition: all 0.1s ease; }
+      nav ul li a:hover {
+        background: #1c1c1c;
+        color: #00aedb;
+        transition: all 0.2s ease; }
+      @media (max-width: 715px) {
+        nav ul li a {
+          display: table;
+          margin: 0;
+          padding: 15px 2px;
+          color: white;
+          border-top: 1px solid rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
+          text-shadow: none;
+          width: 100%; } }
+    nav ul li:hover ul {
+      opacity: 1;
+      max-height: 1000px;
+      transition: all 0.3s ease; }
+      @media (max-width: 715px) {
+        nav ul li:hover ul {
+          max-height: 0; } }
+    nav ul li ul {
+      background: #1c1c1c;
+      list-style: none;
+      padding: 0;
+      position: absolute;
+      width: 200px;
+      max-height: 0;
+      z-index: 0;
+      opacity: 0;
+      overflow: hidden;
+      font-size: .9em;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease; }
+      @media (max-width: 715px) {
+        nav ul li ul {
+          max-height: 0;
+          opacity: 1;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+          transition: all 2s ease; } }
+      nav ul li ul li {
+        float: none;
+        margin: 0; }
+        @media (max-width: 715px) {
+          nav ul li ul li {
+            margin: 0; } }
+        nav ul li ul li a {
+          display: block;
+          text-align: left;
+          padding: 13.3333333333px 16.6666666667px;
+          margin: 0;
+          border-right: none;
+          border-top: 1px solid #161616;
+          box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
+          text-transform: none;
+          text-shadow: none;
+          transition: all 0.2s ease; }
+          nav ul li ul li a:hover {
+            color: #00aedb;
+            background: #424242;
+            transition: all 0.5s ease; }
+          @media (max-width: 715px) {
+            nav ul li ul li a {
+              color: white;
+              padding-left: 20px;
+              background: none; } }
+
+/***************************
+MOBILE NAV STYLES
+***************************/
+.mobile {
+  display: none;
+  margin: 0;
+  padding: 20px 15px;
+  background: linear-gradient(to bottom, #353535 0%, #262626 100%);
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top: 15px;
+  right: 15px;
+  line-height: 0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35); }
+  @media (max-width: 715px) {
+    .mobile {
+      display: table; } }
+
+.active {
+  max-height: 9000px !important;
+  transition: all 1s ease; }
+
+@media (max-width: 715px) {
+  .arrow {
+    display: block;
+    background: url(../images/arrow.png) no-repeat;
+    float: right;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    transition: all 0.3s ease; }
+    .arrow:hover {
+      cursor: pointer; }
+
+  .rotate {
+    transition: all 0.3s ease;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg); } }
+/*********************
+VARIABLES
+**********************/
+/*Controls Menu top & bottom padding*/
+/*Contols Menu left & right padding*/
+/*Control Menu Color Scheme*/
+/*********************
+RESPONSIVE BREAKPOINTS
+**********************/
+/*********************
+NAVIGATION STYLES
+**********************/
+.page-content {
+  margin: 0 auto;
+  width: 1100px;
+  margin-top: 15px; }
+  @media (max-width: 715px) {
+    .page-content {
+      margin: 65px 0 0 0;
+      max-height: 0;
+      overflow: hidden; } }
+  .page-content h1 {
+    text-align: center; }
+  .page-content .alert {
+    color: red; }
+
+/****************************************
+STRUCTURES
+*****************************************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: url(../images/navy_blue.png);
+  overflow-x: hidden;
+  font-family: sans-serif; }
+
+section {
+  width: 1100px;
+  margin: 20px auto;
+  background: #f4f4f4;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px black;
+  padding: 20px; }
+  @media (max-width: 1300px) {
+    section {
+      width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+/*********************
+VARIABLES
+**********************/
+$link-color:white;
+$link-hover:#00aedb;
+$link-vertical-padding:20px;      /*Controls Menu top & bottom padding*/
+$link-horizontal-padding:25px;    /*Contols Menu left & right padding*/
+$menu-background: #353535;        /*Control Menu Color Scheme*/
+
+/*********************
+RESPONSIVE BREAKPOINTS
+**********************/
+@mixin breakpoint($point) {
+  @if $point == 1300 {
+    @media (max-width: 1300px) { @content; }
+  }
+  @else if $point == 715 {
+    @media (max-width: 715px) { @content; }
+  }
+}
+/*********************
+NAVIGATION STYLES
+**********************/
+.page-content {
+  margin:0 auto;
+  width:1100px;
+  margin-top:15px;
+  
+  @include breakpoint(715) {
+    margin:65px 0 0 0;
+    max-height:0;
+    overflow:hidden;
+  }
+  h1{
+    text-align: center;
+  }
+  .alert{
+    color:red;
+  }
+}
+
+
